@@ -1,0 +1,46 @@
+.skills_wrapper {
+    background-color: #0085FF;
+    height: 300px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+
+    & .label {
+        margin-top: 34px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    & .skills_program {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+
+        & li {
+            margin: 0 20px;
+
+            & svg {
+                width: 80px;
+                height: 80px; 
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    & .skills_wrapper {
+        height: auto;
+        
+        & .skills_program {
+            flex-direction: column ;
+            margin: 50px 0;
+
+            & li {
+                margin: 20px 0;
+            }
+        }
+    }
+}
